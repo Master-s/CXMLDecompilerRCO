@@ -209,13 +209,14 @@ namespace CXMLDecompilerRCO
             
             OpenFileDialog opendialog = new OpenFileDialog();
             opendialog.CheckFileExists = true;
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Downloads");
+            opendialog.InitialDirectory = @"Output";
             opendialog.Multiselect = false;
             opendialog.Filter = "PS4 RCO File (*.RCO) | *.rco";
             if (opendialog.ShowDialog() == DialogResult.OK)
             {
                 string FilePath = opendialog.FileName;
                 darkTextBox3.Text = Path.GetFileName(opendialog.FileName);
+                
 
             }
             try
@@ -262,17 +263,17 @@ namespace CXMLDecompilerRCO
                 var ftp = new FTP("", "");
                 foreach (FileInfo fi in di.EnumerateFiles("*.rco"))
                 {
-                    if (File.Exists("ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/" + fi.Name) & overwrite == true)
+                    if (File.Exists("ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/resource/" + fi.Name) & overwrite == true)
                     {
-                        ftp.UploadFile(fi.FullName, "ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/" + fi.Name);
+                        ftp.UploadFile(fi.FullName, "ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/resource/" + fi.Name);
                     }
-                    else if (File.Exists("ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/" + fi.Name) & overwrite == false)
+                    else if (File.Exists("ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/resource/" + fi.Name) & overwrite == false)
                     {
                     }
 
                     else
                     {
-                        ftp.UploadFile(fi.FullName, "ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/" + fi.Name);
+                        ftp.UploadFile(fi.FullName, "ftp://" + ipbox.Text + ":" + portbox.Text + "/system_ex/app/NPXS20001/psm/Application/resource/" + fi.Name);
                     }
                 }
 

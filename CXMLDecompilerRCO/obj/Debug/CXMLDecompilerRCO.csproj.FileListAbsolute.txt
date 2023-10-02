@@ -1,0 +1,14 @@
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\bin\Debug\CXMLDecompilerRCO.exe.config
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\bin\Debug\CXMLDecompilerRCO.exe
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\bin\Debug\CXMLDecompilerRCO.pdb
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.csproj.AssemblyReference.cache
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.FNotification.resources
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.Form1.resources
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.FPkgInstaller.resources
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.Properties.Resources.resources
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.TopMenu.resources
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.csproj.GenerateResource.cache
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.csproj.CoreCompileInputs.cache
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.csproj.CopyComplete
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.exe
+C:\Users\Master\Desktop\CXMLDecompilerRCO\CXMLDecompilerRCO\obj\Debug\CXMLDecompilerRCO.pdb
