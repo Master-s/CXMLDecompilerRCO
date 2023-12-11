@@ -40,7 +40,6 @@ namespace CXMLDecompilerRCO
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.darkSectionPanel2 = new DarkUI.Controls.DarkSectionPanel();
             this.darkTextBox3 = new DarkUI.Controls.DarkTextBox();
             this.darkLabelSend = new DarkUI.Controls.DarkLabel();
@@ -53,6 +52,12 @@ namespace CXMLDecompilerRCO
             this.portbox = new DarkUI.Controls.DarkTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.darkSectionPanel1 = new DarkUI.Controls.DarkSectionPanel();
+            this.buttonPS5CommonAssets = new System.Windows.Forms.Button();
+            this.PS5buttonPkgInstaller = new System.Windows.Forms.Button();
+            this.darkRadioButtonPS5 = new DarkUI.Controls.DarkRadioButton();
+            this.darkRadioButtonPS4 = new DarkUI.Controls.DarkRadioButton();
+            this.buttonLoginMgr = new System.Windows.Forms.Button();
+            this.SettingsCore = new System.Windows.Forms.Button();
             this.labelBuild = new System.Windows.Forms.Label();
             this.buttonTopMenu = new System.Windows.Forms.Button();
             this.buttonApplicationExit = new System.Windows.Forms.Button();
@@ -66,19 +71,20 @@ namespace CXMLDecompilerRCO
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.darkContextMenu1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.darkSectionPanel2.SuspendLayout();
             this.darkGroupBox2.SuspendLayout();
             this.darkSectionPanel1.SuspendLayout();
             this.darkGroupBox3.SuspendLayout();
             this.darkGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // darkContextMenu1
             // 
-            this.darkContextMenu1.BackColor = System.Drawing.SystemColors.Control;
+            this.darkContextMenu1.BackColor = System.Drawing.Color.DodgerBlue;
             this.darkContextMenu1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.darkContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
@@ -109,32 +115,32 @@ namespace CXMLDecompilerRCO
             // 
             this.openRCOToolStripMenuItem.Image = global::CXMLDecompilerRCO.Properties.Resources.open_folder0;
             this.openRCOToolStripMenuItem.Name = "openRCOToolStripMenuItem";
-            this.openRCOToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.openRCOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openRCOToolStripMenuItem.Text = "Open RCO";
             this.openRCOToolStripMenuItem.Click += new System.EventHandler(this.openRCOToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(127, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::CXMLDecompilerRCO.Properties.Resources.open_folder0;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Open XML";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(127, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
@@ -167,15 +173,6 @@ namespace CXMLDecompilerRCO
             this.label3.UseCompatibleTextRendering = true;
             this.label3.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CXMLDecompilerRCO.Properties.Resources.rco_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 59);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // darkSectionPanel2
             // 
             this.darkSectionPanel2.Controls.Add(this.darkTextBox3);
@@ -196,7 +193,7 @@ namespace CXMLDecompilerRCO
             this.darkTextBox3.Location = new System.Drawing.Point(4, 87);
             this.darkTextBox3.Multiline = true;
             this.darkTextBox3.Name = "darkTextBox3";
-            this.darkTextBox3.Size = new System.Drawing.Size(133, 110);
+            this.darkTextBox3.Size = new System.Drawing.Size(133, 68);
             this.darkTextBox3.TabIndex = 9;
             // 
             // darkLabelSend
@@ -313,6 +310,12 @@ namespace CXMLDecompilerRCO
             // 
             this.darkSectionPanel1.BackColor = System.Drawing.Color.Transparent;
             this.darkSectionPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.darkSectionPanel1.Controls.Add(this.buttonPS5CommonAssets);
+            this.darkSectionPanel1.Controls.Add(this.PS5buttonPkgInstaller);
+            this.darkSectionPanel1.Controls.Add(this.darkRadioButtonPS5);
+            this.darkSectionPanel1.Controls.Add(this.darkRadioButtonPS4);
+            this.darkSectionPanel1.Controls.Add(this.buttonLoginMgr);
+            this.darkSectionPanel1.Controls.Add(this.SettingsCore);
             this.darkSectionPanel1.Controls.Add(this.labelBuild);
             this.darkSectionPanel1.Controls.Add(this.buttonTopMenu);
             this.darkSectionPanel1.Controls.Add(this.buttonApplicationExit);
@@ -324,6 +327,111 @@ namespace CXMLDecompilerRCO
             this.darkSectionPanel1.SectionHeader = null;
             this.darkSectionPanel1.Size = new System.Drawing.Size(141, 503);
             this.darkSectionPanel1.TabIndex = 11;
+            // 
+            // buttonPS5CommonAssets
+            // 
+            this.buttonPS5CommonAssets.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPS5CommonAssets.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonPS5CommonAssets.FlatAppearance.BorderSize = 2;
+            this.buttonPS5CommonAssets.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(222)))));
+            this.buttonPS5CommonAssets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonPS5CommonAssets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPS5CommonAssets.ForeColor = System.Drawing.Color.Black;
+            this.buttonPS5CommonAssets.Image = ((System.Drawing.Image)(resources.GetObject("buttonPS5CommonAssets.Image")));
+            this.buttonPS5CommonAssets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPS5CommonAssets.Location = new System.Drawing.Point(3, 96);
+            this.buttonPS5CommonAssets.Name = "buttonPS5CommonAssets";
+            this.buttonPS5CommonAssets.Size = new System.Drawing.Size(132, 42);
+            this.buttonPS5CommonAssets.TabIndex = 17;
+            this.buttonPS5CommonAssets.Text = "        CommonAssets";
+            this.buttonPS5CommonAssets.UseVisualStyleBackColor = false;
+            this.buttonPS5CommonAssets.Visible = false;
+            this.buttonPS5CommonAssets.Click += new System.EventHandler(this.buttonPS5CommonAssets_Click);
+            // 
+            // PS5buttonPkgInstaller
+            // 
+            this.PS5buttonPkgInstaller.BackColor = System.Drawing.Color.Transparent;
+            this.PS5buttonPkgInstaller.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.PS5buttonPkgInstaller.FlatAppearance.BorderSize = 2;
+            this.PS5buttonPkgInstaller.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(222)))));
+            this.PS5buttonPkgInstaller.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.PS5buttonPkgInstaller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PS5buttonPkgInstaller.ForeColor = System.Drawing.Color.Black;
+            this.PS5buttonPkgInstaller.Image = ((System.Drawing.Image)(resources.GetObject("PS5buttonPkgInstaller.Image")));
+            this.PS5buttonPkgInstaller.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PS5buttonPkgInstaller.Location = new System.Drawing.Point(3, 55);
+            this.PS5buttonPkgInstaller.Name = "PS5buttonPkgInstaller";
+            this.PS5buttonPkgInstaller.Size = new System.Drawing.Size(132, 42);
+            this.PS5buttonPkgInstaller.TabIndex = 16;
+            this.PS5buttonPkgInstaller.Text = "       PkgInstaller";
+            this.PS5buttonPkgInstaller.UseVisualStyleBackColor = false;
+            this.PS5buttonPkgInstaller.Visible = false;
+            this.PS5buttonPkgInstaller.Click += new System.EventHandler(this.PS5buttonPkgInstaller_Click);
+            // 
+            // darkRadioButtonPS5
+            // 
+            this.darkRadioButtonPS5.AutoSize = true;
+            this.darkRadioButtonPS5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darkRadioButtonPS5.Location = new System.Drawing.Point(87, 28);
+            this.darkRadioButtonPS5.Name = "darkRadioButtonPS5";
+            this.darkRadioButtonPS5.Size = new System.Drawing.Size(48, 21);
+            this.darkRadioButtonPS5.TabIndex = 15;
+            this.darkRadioButtonPS5.TabStop = true;
+            this.darkRadioButtonPS5.Text = "PS5";
+            this.darkRadioButtonPS5.CheckedChanged += new System.EventHandler(this.darkRadioButtonPS5_CheckedChanged);
+            // 
+            // darkRadioButtonPS4
+            // 
+            this.darkRadioButtonPS4.AutoSize = true;
+            this.darkRadioButtonPS4.BackColor = System.Drawing.Color.Transparent;
+            this.darkRadioButtonPS4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darkRadioButtonPS4.ForeColor = System.Drawing.Color.Transparent;
+            this.darkRadioButtonPS4.Location = new System.Drawing.Point(3, 28);
+            this.darkRadioButtonPS4.Name = "darkRadioButtonPS4";
+            this.darkRadioButtonPS4.Size = new System.Drawing.Size(48, 21);
+            this.darkRadioButtonPS4.TabIndex = 14;
+            this.darkRadioButtonPS4.TabStop = true;
+            this.darkRadioButtonPS4.Text = "PS4";
+            this.darkRadioButtonPS4.CheckedChanged += new System.EventHandler(this.darkRadioButtonPS4_CheckedChanged);
+            // 
+            // buttonLoginMgr
+            // 
+            this.buttonLoginMgr.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLoginMgr.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonLoginMgr.FlatAppearance.BorderSize = 2;
+            this.buttonLoginMgr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(222)))));
+            this.buttonLoginMgr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonLoginMgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLoginMgr.ForeColor = System.Drawing.Color.Black;
+            this.buttonLoginMgr.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoginMgr.Image")));
+            this.buttonLoginMgr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLoginMgr.Location = new System.Drawing.Point(3, 96);
+            this.buttonLoginMgr.Name = "buttonLoginMgr";
+            this.buttonLoginMgr.Size = new System.Drawing.Size(132, 42);
+            this.buttonLoginMgr.TabIndex = 12;
+            this.buttonLoginMgr.Text = "   LoginMgr";
+            this.buttonLoginMgr.UseVisualStyleBackColor = false;
+            this.buttonLoginMgr.Visible = false;
+            this.buttonLoginMgr.Click += new System.EventHandler(this.buttonLoginMgr_Click);
+            // 
+            // SettingsCore
+            // 
+            this.SettingsCore.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsCore.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.SettingsCore.FlatAppearance.BorderSize = 2;
+            this.SettingsCore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(222)))));
+            this.SettingsCore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.SettingsCore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingsCore.ForeColor = System.Drawing.Color.Black;
+            this.SettingsCore.Image = ((System.Drawing.Image)(resources.GetObject("SettingsCore.Image")));
+            this.SettingsCore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingsCore.Location = new System.Drawing.Point(3, 263);
+            this.SettingsCore.Name = "SettingsCore";
+            this.SettingsCore.Size = new System.Drawing.Size(132, 42);
+            this.SettingsCore.TabIndex = 11;
+            this.SettingsCore.Text = "      SettingsCore";
+            this.SettingsCore.UseVisualStyleBackColor = false;
+            this.SettingsCore.Visible = false;
             // 
             // labelBuild
             // 
@@ -348,18 +456,18 @@ namespace CXMLDecompilerRCO
             this.buttonTopMenu.ForeColor = System.Drawing.Color.Black;
             this.buttonTopMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonTopMenu.Image")));
             this.buttonTopMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTopMenu.Location = new System.Drawing.Point(3, 154);
+            this.buttonTopMenu.Location = new System.Drawing.Point(3, 221);
             this.buttonTopMenu.Name = "buttonTopMenu";
             this.buttonTopMenu.Size = new System.Drawing.Size(132, 42);
             this.buttonTopMenu.TabIndex = 10;
             this.buttonTopMenu.Text = "    TopMenu";
             this.buttonTopMenu.UseVisualStyleBackColor = false;
+            this.buttonTopMenu.Visible = false;
             this.buttonTopMenu.Click += new System.EventHandler(this.buttonTopMenu_Click);
             // 
             // buttonApplicationExit
             // 
             this.buttonApplicationExit.BackColor = System.Drawing.Color.Transparent;
-            this.buttonApplicationExit.Enabled = false;
             this.buttonApplicationExit.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonApplicationExit.FlatAppearance.BorderSize = 2;
             this.buttonApplicationExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(222)))));
@@ -368,13 +476,15 @@ namespace CXMLDecompilerRCO
             this.buttonApplicationExit.ForeColor = System.Drawing.Color.Black;
             this.buttonApplicationExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonApplicationExit.Image")));
             this.buttonApplicationExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonApplicationExit.Location = new System.Drawing.Point(3, 28);
+            this.buttonApplicationExit.Location = new System.Drawing.Point(3, 55);
             this.buttonApplicationExit.Name = "buttonApplicationExit";
             this.buttonApplicationExit.Size = new System.Drawing.Size(132, 42);
             this.buttonApplicationExit.TabIndex = 7;
             this.buttonApplicationExit.Text = "ApplicationExit";
             this.buttonApplicationExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonApplicationExit.UseVisualStyleBackColor = false;
+            this.buttonApplicationExit.Visible = false;
+            this.buttonApplicationExit.Click += new System.EventHandler(this.buttonApplicationExit_Click);
             // 
             // buttonPkgInstaller
             // 
@@ -387,12 +497,13 @@ namespace CXMLDecompilerRCO
             this.buttonPkgInstaller.ForeColor = System.Drawing.Color.Black;
             this.buttonPkgInstaller.Image = ((System.Drawing.Image)(resources.GetObject("buttonPkgInstaller.Image")));
             this.buttonPkgInstaller.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPkgInstaller.Location = new System.Drawing.Point(3, 112);
+            this.buttonPkgInstaller.Location = new System.Drawing.Point(3, 179);
             this.buttonPkgInstaller.Name = "buttonPkgInstaller";
             this.buttonPkgInstaller.Size = new System.Drawing.Size(132, 42);
             this.buttonPkgInstaller.TabIndex = 9;
             this.buttonPkgInstaller.Text = "       PkgInstaller";
             this.buttonPkgInstaller.UseVisualStyleBackColor = false;
+            this.buttonPkgInstaller.Visible = false;
             this.buttonPkgInstaller.Click += new System.EventHandler(this.buttonPkgInstaller_Click);
             // 
             // buttonNotification
@@ -406,12 +517,13 @@ namespace CXMLDecompilerRCO
             this.buttonNotification.ForeColor = System.Drawing.Color.Black;
             this.buttonNotification.Image = ((System.Drawing.Image)(resources.GetObject("buttonNotification.Image")));
             this.buttonNotification.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNotification.Location = new System.Drawing.Point(3, 70);
+            this.buttonNotification.Location = new System.Drawing.Point(3, 137);
             this.buttonNotification.Name = "buttonNotification";
             this.buttonNotification.Size = new System.Drawing.Size(132, 42);
             this.buttonNotification.TabIndex = 8;
             this.buttonNotification.Text = "       Notification";
             this.buttonNotification.UseVisualStyleBackColor = false;
+            this.buttonNotification.Visible = false;
             this.buttonNotification.Click += new System.EventHandler(this.buttonNotification_Click);
             // 
             // darkGroupBox3
@@ -504,11 +616,20 @@ namespace CXMLDecompilerRCO
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CXMLDecompilerRCO.Properties.Resources.rco_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 59);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1021, 595);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.darkSectionPanel2);
@@ -531,7 +652,6 @@ namespace CXMLDecompilerRCO
             this.Load += new System.EventHandler(this.Form1_Load);
             this.darkContextMenu1.ResumeLayout(false);
             this.darkContextMenu1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.darkSectionPanel2.ResumeLayout(false);
             this.darkSectionPanel2.PerformLayout();
             this.darkGroupBox2.ResumeLayout(false);
@@ -542,6 +662,7 @@ namespace CXMLDecompilerRCO
             this.darkGroupBox1.ResumeLayout(false);
             this.darkGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -585,6 +706,12 @@ namespace CXMLDecompilerRCO
         private System.Windows.Forms.PictureBox pictureBox2;
         private DarkUI.Controls.DarkTextBox darkTextBox3;
         private System.Windows.Forms.Button butSaveIP;
+        private System.Windows.Forms.Button SettingsCore;
+        private System.Windows.Forms.Button buttonLoginMgr;
+        private DarkUI.Controls.DarkRadioButton darkRadioButtonPS4;
+        private DarkUI.Controls.DarkRadioButton darkRadioButtonPS5;
+        private System.Windows.Forms.Button PS5buttonPkgInstaller;
+        private System.Windows.Forms.Button buttonPS5CommonAssets;
     }
 }
 

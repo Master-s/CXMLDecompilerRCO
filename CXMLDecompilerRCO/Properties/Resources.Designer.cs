@@ -63,6 +63,16 @@ namespace CXMLDecompilerRCO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AppExit {
+            get {
+                object obj = ResourceManager.GetObject("AppExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Avatar028x28 {
             get {
                 object obj = ResourceManager.GetObject("Avatar028x28", resourceCulture);
@@ -113,9 +123,39 @@ namespace CXMLDecompilerRCO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackG010 {
+            get {
+                object obj = ResourceManager.GetObject("BackG010", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_01 {
             get {
                 object obj = ResourceManager.GetObject("bar_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap default_game {
+            get {
+                object obj = ResourceManager.GetObject("default_game", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginMgr1 {
+            get {
+                object obj = ResourceManager.GetObject("LoginMgr1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +196,26 @@ namespace CXMLDecompilerRCO.Properties {
         internal static System.Drawing.Bitmap PkgInstaller02 {
             get {
                 object obj = ResourceManager.GetObject("PkgInstaller02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PS5PKG {
+            get {
+                object obj = ResourceManager.GetObject("PS5PKG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PS5PKG00 {
+            get {
+                object obj = ResourceManager.GetObject("PS5PKG00", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

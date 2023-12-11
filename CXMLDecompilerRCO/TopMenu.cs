@@ -68,7 +68,6 @@ namespace CXMLDecompilerRCO
                 binaryWriter.Write(buffer1);
                 binaryWriter.Close();
             }
-
             if (comboBox1.Text == "CyanAqua")
             {
                 BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
@@ -1073,6 +1072,242 @@ namespace CXMLDecompilerRCO
                 binaryWriter.Write(buffer9);
                 binaryWriter.Close();
             }
+        }
+
+        private void buttonBintop2_Click(object sender, EventArgs e)
+        {
+            this.openFileDialog1.Filter = ".BIN Files|*.bin";
+            if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (this.openFileDialog1.SafeFileName != "layout_contents_area_scene.bin")
+                {
+
+                    MessageBox.Show("This file should be. layout_contents_area_scene.bin!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    this.Close();
+                }
+                else
+                {
+                    this.labelNameBIN02.Text = this.openFileDialog1.SafeFileName;
+
+                    MessageBox.Show(this.openFileDialog1.SafeFileName + " successfully loaded!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+            }
+        }
+
+        private void button11background_Click(object sender, EventArgs e)
+        {
+            if (darkComboBox1.Text == "Default")
+            {
+                comboBoxBackground.Enabled = true;
+                if (comboBoxBackground.Text == "Default")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer0 = new byte[] { 0x9A, 0x99, 0x19, 0x3F, 0x9A, 0x99, 0x19, 0x3F, 0x9A, 0x99, 0x19, 0x3F, 0x00, 0x00, 0x00, 0x00 };
+                    this.panel2.BackColor = Color.Transparent;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer0);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Black")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer01 = new byte[] { 0x22, 0x22, 0x22, 0x2E, 0x00, 0x00, 0x00, 0x2E, 0x00, 0x00, 0x00, 0x3E, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Black;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer01);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Green")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer1 = new byte[] { 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x2F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Lime;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer1);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "CyanAqua")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer2 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Cyan;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer2);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "BlueRibbon")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer3 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.FromArgb(0, 81, 255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer3);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Blue")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer4 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Blue;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer4);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "White")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer5 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.White;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer5);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "BlazeOrange")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer6 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x1F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Orange;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer6);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Red")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer7 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x1F, 0xAD, 0xAC, 0xAC, 0x1F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Red;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer7);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "MagentaFuchsia")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer8 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x1F, 0xAD, 0xAC, 0xAC, 0x4F, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Magenta;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer8);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Yellow")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer9 = new byte[] { 0x92, 0x91, 0x91, 0x3F, 0xDE, 0xDC, 0xDC, 0x3F, 0xAD, 0xAC, 0xAC, 0x3E, 0x00, 0x00, 0x80, 0x3F };
+                    this.panel2.BackColor = Color.Yellow;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer9);
+                    binaryWriter.Close();
+                }
+
+
+            }
+
+            if (darkComboBox1.Text == "Transparent")
+            {
+                if (comboBoxBackground.Text == "Default")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer0 = new byte[] { 0x9A, 0x99, 0x19, 0x3F, 0x9A, 0x99, 0x19, 0x3F, 0x9A, 0x99, 0x19, 0x3F, 0x00, 0x00, 0x00, 0x00 };
+                    this.panel2.BackColor = Color.Transparent;
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer0);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Black")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer01 = new byte[] { 0x22, 0x22, 0x22, 0x2E, 0x00, 0x00, 0x00, 0x2E, 0x00, 0x00, 0x00, 0x3E, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118,0, 0, 0);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer01);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Green")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer1 = new byte[] { 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x2F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 54, 172, 64);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer1);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "CyanAqua")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer2 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 0, 255, 255);//FromArgb(118, 0,255,255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer2);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "BlueRibbon")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer3 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 0, 81, 255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer3);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Blue")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer4 = new byte[] { 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x2E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 0, 0, 255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer4);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "White")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer5 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 255, 255, 255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer5);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "BlazeOrange")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer6 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x3E, 0xAD, 0xAC, 0xAC, 0x1F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 255, 165, 0);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer6);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Red")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer7 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x1F, 0xAD, 0xAC, 0xAC, 0x1F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 255, 0, 0);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer7);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "MagentaFuchsia")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer8 = new byte[] { 0xAD, 0xAC, 0xAC, 0x4E, 0xAD, 0xAC, 0xAC, 0x1F, 0xAD, 0xAC, 0xAC, 0x4F, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 255, 0, 255);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer8);
+                    binaryWriter.Close();
+                }
+                if (comboBoxBackground.Text == "Yellow")
+                {
+                    BinaryWriter binaryWriter = new BinaryWriter(File.OpenWrite(this.openFileDialog1.FileName));
+                    byte[] buffer9 = new byte[] { 0x92, 0x91, 0x91, 0x3F, 0xDE, 0xDC, 0xDC, 0x3F, 0xAD, 0xAC, 0xAC, 0x3E, 0x00, 0x00, 0x80, 0x3E };
+                    this.panel2.BackColor = Color.FromArgb(118, 255, 255, 0);//FromArgb(118, 255,255,0);
+                    binaryWriter.BaseStream.Position = 0x184;
+                    binaryWriter.Write(buffer9);
+                    binaryWriter.Close();
+                }
+
+
+            }
+
+
         }
     }
 }

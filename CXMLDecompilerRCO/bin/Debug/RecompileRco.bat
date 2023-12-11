@@ -1,7 +1,7 @@
 @echo off
 color a
-for %%a in (*.RCO) DO CXMLDecompiler.exe Sce.Vsh.ShellUI.TopMenu\Sce.Vsh.ShellUI.TopMenu.xml -c 
-DEL Output\Sce.Vsh.ShellUI.TopMenu.rco
+for %%a in (*.RCO) DO CXMLDecompiler.exe ReactNative.Components.CommonAssets\ReactNative.Components.CommonAssets.xml -c 
+DEL Output\ReactNative.Components.CommonAssets.rco
 move -c Output
-rename Output\-c Sce.Vsh.ShellUI.TopMenu.rco
+rename Output\-c ReactNative.Components.CommonAssets.rco
 %%a output

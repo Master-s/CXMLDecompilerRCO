@@ -57,6 +57,7 @@ namespace CXMLDecompilerRCO
         }
         private void openRCOToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             openFileDialog1.Filter = "RCO files (*.rco)|*.rco;|All files (*.*)|*.*";
             openFileDialog1.ShowDialog();
             path = openFileDialog1.SafeFileName;
@@ -198,7 +199,14 @@ namespace CXMLDecompilerRCO
         {
             ShowTHisForm(new TopMenu());
         }
-
+        private void buttonApplicationExit_Click(object sender, EventArgs e)
+        {
+            ShowTHisForm(new ApplicationExit());
+        }
+        private void buttonLoginMgr_Click(object sender, EventArgs e)
+        {
+            ShowTHisForm(new LoginMgr());
+        }
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
@@ -352,6 +360,62 @@ namespace CXMLDecompilerRCO
             {
                 
             }
+        }
+
+        private void darkCheckBoxPS4_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonApplicationExit.Visible = true;
+        }
+
+        private void darkRadioButtonPS4_CheckedChanged(object sender, EventArgs e)
+        {
+            panelhome.Controls.Clear();
+            if (darkRadioButtonPS4.Checked)
+            {
+                buttonApplicationExit.Visible = true;
+                buttonLoginMgr.Visible = true;
+                buttonNotification.Visible = true;
+                buttonPkgInstaller.Visible = true;
+                buttonTopMenu.Visible = true;
+                SettingsCore.Visible = true;
+            }
+            else
+            {
+                buttonApplicationExit.Visible = false;
+                buttonLoginMgr.Visible = false;
+                buttonNotification.Visible = false;
+                buttonPkgInstaller.Visible = false;
+                buttonTopMenu.Visible = false;
+                SettingsCore.Visible = false;
+            }
+
+            
+        }
+
+        private void darkRadioButtonPS5_CheckedChanged(object sender, EventArgs e)
+        {
+            panelhome.Controls.Clear();
+            if (darkRadioButtonPS5.Checked)
+            {
+                PS5buttonPkgInstaller.Visible = true;
+                buttonPS5CommonAssets.Visible = true;
+            }
+            else
+            {
+                PS5buttonPkgInstaller.Visible = false;
+                buttonPS5CommonAssets.Visible = false;
+            }
+
+        }
+
+        private void PS5buttonPkgInstaller_Click(object sender, EventArgs e)
+        {
+            ShowTHisForm(new PS5PkgInstaller());
+        }
+
+        private void buttonPS5CommonAssets_Click(object sender, EventArgs e)
+        {
+            ShowTHisForm(new CommonAssets()); 
         }
     }
 }

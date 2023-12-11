@@ -55,11 +55,20 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CustomMarshalers" />
     <Reference Include="DarkUI, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DarkUI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.5.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.5\lib\net48\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.5.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Shell.1.1.5\lib\net48\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -74,6 +83,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,8 +92,26 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationExit.Designer.cs">
+      <DependentUpon>ApplicationExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonAssets.Designer.cs">
+      <DependentUpon>CommonAssets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonOpenFileDialog.cs" />
+    <Compile Include="FlatComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FNotification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,14 +133,43 @@
     <Compile Include="FTP.cs" />
     <Compile Include="IniConfig.cs" />
     <Compile Include="Ini\IniFile.cs" />
+    <Compile Include="LoginMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMgr.Designer.cs">
+      <DependentUpon>LoginMgr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PS5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PS5.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PS5PkgInstaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PS5PkgInstaller.Designer.cs">
+      <DependentUpon>PS5PkgInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsCore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsCore.Designer.cs">
+      <DependentUpon>SettingsCore.cs</DependentUpon>
+    </Compile>
     <Compile Include="TopMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TopMenu.Designer.cs">
       <DependentUpon>TopMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ApplicationExit.resx">
+      <DependentUpon>ApplicationExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonAssets.resx">
+      <DependentUpon>CommonAssets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FNotification.resx">
       <DependentUpon>FNotification.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +178,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPkgInstaller.resx">
       <DependentUpon>FPkgInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMgr.resx">
+      <DependentUpon>LoginMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\PS5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PS5.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,6 +196,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PS5PkgInstaller.resx">
+      <DependentUpon>PS5PkgInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsCore.resx">
+      <DependentUpon>SettingsCore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopMenu.resx">
       <DependentUpon>TopMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,7 +292,22 @@
     <None Include="Resources\rco_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PS5\iconidhome.png" />
+    <None Include="PS5\AquaIconidhome.png" />
+    <None Include="PS5\BlueIconidhome.png" />
+    <None Include="PS5\ChartreuseIconidhome.png" />
+    <None Include="PS5\DarkGoldenrodIconidhome.png" />
+    <None Include="PS5\EGGPLANTIconidhome.png" />
+    <None Include="PS5\FuchsiaIconidhome.png" />
+    <None Include="PS5\GoldIconidhome.png" />
     <Content Include="rco_logo0.ico" />
+    <None Include="Resources\PS5PKG00.png" />
+    <None Include="Resources\PS5PKG.png" />
+    <None Include="Resources\LoginMgr1.png" />
+    <None Include="Resources\BackG010.png" />
+    <None Include="Resources\default_game.png" />
+    <None Include="Resources\AppExit.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

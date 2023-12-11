@@ -32,6 +32,13 @@ namespace CXMLDecompilerRCO
             this.panelTopMenu = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.darkComboBox1 = new DarkUI.Controls.DarkComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelNameBIN02 = new System.Windows.Forms.Label();
+            this.buttonBintop2 = new System.Windows.Forms.Button();
+            this.comboBoxBackground = new System.Windows.Forms.ComboBox();
+            this.button11background = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelpsplus = new System.Windows.Forms.Label();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
@@ -71,6 +78,7 @@ namespace CXMLDecompilerRCO
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panelTopMenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +108,7 @@ namespace CXMLDecompilerRCO
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labelpsplus);
             this.panel1.Controls.Add(this.comboBox11);
@@ -138,6 +147,100 @@ namespace CXMLDecompilerRCO
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(714, 455);
             this.panel1.TabIndex = 95;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::CXMLDecompilerRCO.Properties.Resources.BackG010;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.darkComboBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.labelNameBIN02);
+            this.panel2.Controls.Add(this.buttonBintop2);
+            this.panel2.Controls.Add(this.comboBoxBackground);
+            this.panel2.Controls.Add(this.button11background);
+            this.panel2.Location = new System.Drawing.Point(5, 127);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(706, 325);
+            this.panel2.TabIndex = 97;
+            // 
+            // darkComboBox1
+            // 
+            this.darkComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.darkComboBox1.FormattingEnabled = true;
+            this.darkComboBox1.Items.AddRange(new object[] {
+            "Default",
+            "Transparent"});
+            this.darkComboBox1.Location = new System.Drawing.Point(4, 194);
+            this.darkComboBox1.Name = "darkComboBox1";
+            this.darkComboBox1.Size = new System.Drawing.Size(90, 21);
+            this.darkComboBox1.TabIndex = 101;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "background";
+            // 
+            // labelNameBIN02
+            // 
+            this.labelNameBIN02.AutoSize = true;
+            this.labelNameBIN02.Location = new System.Drawing.Point(100, 168);
+            this.labelNameBIN02.Name = "labelNameBIN02";
+            this.labelNameBIN02.Size = new System.Drawing.Size(10, 13);
+            this.labelNameBIN02.TabIndex = 98;
+            this.labelNameBIN02.Text = ".";
+            // 
+            // buttonBintop2
+            // 
+            this.buttonBintop2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBintop2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBintop2.ForeColor = System.Drawing.Color.White;
+            this.buttonBintop2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBintop2.Location = new System.Drawing.Point(4, 161);
+            this.buttonBintop2.Name = "buttonBintop2";
+            this.buttonBintop2.Size = new System.Drawing.Size(90, 27);
+            this.buttonBintop2.TabIndex = 97;
+            this.buttonBintop2.Text = "Open bin";
+            this.buttonBintop2.UseVisualStyleBackColor = false;
+            this.buttonBintop2.Click += new System.EventHandler(this.buttonBintop2_Click);
+            // 
+            // comboBoxBackground
+            // 
+            this.comboBoxBackground.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxBackground.Items.AddRange(new object[] {
+            "Default",
+            "Black",
+            "Green",
+            "CyanAqua",
+            "BlueRibbon",
+            "Blue",
+            "White",
+            "BlazeOrange",
+            "Red",
+            "MagentaFuchsia",
+            "Yellow"});
+            this.comboBoxBackground.Location = new System.Drawing.Point(4, 221);
+            this.comboBoxBackground.Name = "comboBoxBackground";
+            this.comboBoxBackground.Size = new System.Drawing.Size(90, 21);
+            this.comboBoxBackground.TabIndex = 95;
+            // 
+            // button11background
+            // 
+            this.button11background.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button11background.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button11background.ForeColor = System.Drawing.Color.White;
+            this.button11background.Location = new System.Drawing.Point(4, 248);
+            this.button11background.Name = "button11background";
+            this.button11background.Size = new System.Drawing.Size(90, 23);
+            this.button11background.TabIndex = 96;
+            this.button11background.Text = "Apply";
+            this.button11background.UseVisualStyleBackColor = false;
+            this.button11background.Click += new System.EventHandler(this.button11background_Click);
             // 
             // pictureBox1
             // 
@@ -642,6 +745,8 @@ namespace CXMLDecompilerRCO
             this.panelTopMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -689,5 +794,12 @@ namespace CXMLDecompilerRCO
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button11background;
+        private System.Windows.Forms.ComboBox comboBoxBackground;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label labelNameBIN02;
+        private System.Windows.Forms.Button buttonBintop2;
+        private System.Windows.Forms.Label label1;
+        private DarkUI.Controls.DarkComboBox darkComboBox1;
     }
 }

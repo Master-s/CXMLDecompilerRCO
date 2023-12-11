@@ -37,24 +37,16 @@ namespace CXMLDecompilerRCO
             this.UserAvatar = new System.Windows.Forms.Label();
             this.labColor1 = new System.Windows.Forms.Label();
             this.darkGroupBox2 = new DarkUI.Controls.DarkGroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureAvatar3 = new System.Windows.Forms.PictureBox();
             this.panelcolor2 = new System.Windows.Forms.Panel();
-            this.pictureAvatar2 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureAvatar1 = new System.Windows.Forms.PictureBox();
-            this.pictureAvatar0 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.labelColor2 = new System.Windows.Forms.Label();
             this.location1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.darkGroupBox1 = new DarkUI.Controls.DarkGroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
             this.labelbin = new System.Windows.Forms.Label();
             this.lablelocation1 = new System.Windows.Forms.Label();
@@ -87,25 +79,33 @@ namespace CXMLDecompilerRCO
             this.NotificationMsgPanel0 = new System.Windows.Forms.Label();
             this.lablocation0 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureAvatar3 = new System.Windows.Forms.PictureBox();
+            this.pictureAvatar2 = new System.Windows.Forms.PictureBox();
+            this.pictureAvatar1 = new System.Windows.Forms.PictureBox();
+            this.pictureAvatar0 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelFNotif.SuspendLayout();
             this.darkGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar3)).BeginInit();
             this.panelcolor2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar2)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel8.SuspendLayout();
             this.darkGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFNotif
@@ -228,16 +228,6 @@ namespace CXMLDecompilerRCO
             this.darkGroupBox2.TabIndex = 67;
             this.darkGroupBox2.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 18);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(272, 112);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 64;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.pictureAvatar3);
@@ -249,15 +239,6 @@ namespace CXMLDecompilerRCO
             this.panel6.Size = new System.Drawing.Size(272, 109);
             this.panel6.TabIndex = 65;
             // 
-            // pictureAvatar3
-            // 
-            this.pictureAvatar3.BackColor = System.Drawing.Color.White;
-            this.pictureAvatar3.Location = new System.Drawing.Point(3, 53);
-            this.pictureAvatar3.Name = "pictureAvatar3";
-            this.pictureAvatar3.Size = new System.Drawing.Size(75, 36);
-            this.pictureAvatar3.TabIndex = 71;
-            this.pictureAvatar3.TabStop = false;
-            // 
             // panelcolor2
             // 
             this.panelcolor2.BackColor = System.Drawing.Color.Transparent;
@@ -266,14 +247,6 @@ namespace CXMLDecompilerRCO
             this.panelcolor2.Name = "panelcolor2";
             this.panelcolor2.Size = new System.Drawing.Size(263, 18);
             this.panelcolor2.TabIndex = 68;
-            // 
-            // pictureAvatar2
-            // 
-            this.pictureAvatar2.Location = new System.Drawing.Point(3, 0);
-            this.pictureAvatar2.Name = "pictureAvatar2";
-            this.pictureAvatar2.Size = new System.Drawing.Size(75, 18);
-            this.pictureAvatar2.TabIndex = 71;
-            this.pictureAvatar2.TabStop = false;
             // 
             // panel7
             // 
@@ -284,33 +257,6 @@ namespace CXMLDecompilerRCO
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(263, 44);
             this.panel7.TabIndex = 65;
-            // 
-            // pictureAvatar1
-            // 
-            this.pictureAvatar1.Location = new System.Drawing.Point(3, 15);
-            this.pictureAvatar1.Name = "pictureAvatar1";
-            this.pictureAvatar1.Size = new System.Drawing.Size(75, 18);
-            this.pictureAvatar1.TabIndex = 71;
-            this.pictureAvatar1.TabStop = false;
-            // 
-            // pictureAvatar0
-            // 
-            this.pictureAvatar0.BackColor = System.Drawing.Color.Transparent;
-            this.pictureAvatar0.Location = new System.Drawing.Point(86, 3);
-            this.pictureAvatar0.Name = "pictureAvatar0";
-            this.pictureAvatar0.Size = new System.Drawing.Size(28, 28);
-            this.pictureAvatar0.TabIndex = 71;
-            this.pictureAvatar0.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(274, 114);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 64;
-            this.pictureBox4.TabStop = false;
             // 
             // label22
             // 
@@ -374,16 +320,6 @@ namespace CXMLDecompilerRCO
             this.darkGroupBox1.TabIndex = 66;
             this.darkGroupBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(272, 112);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -392,16 +328,6 @@ namespace CXMLDecompilerRCO
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(250, 74);
             this.panel5.TabIndex = 59;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // label20
             // 
@@ -748,6 +674,80 @@ namespace CXMLDecompilerRCO
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(272, 112);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 64;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureAvatar3
+            // 
+            this.pictureAvatar3.BackColor = System.Drawing.Color.White;
+            this.pictureAvatar3.Location = new System.Drawing.Point(3, 53);
+            this.pictureAvatar3.Name = "pictureAvatar3";
+            this.pictureAvatar3.Size = new System.Drawing.Size(75, 36);
+            this.pictureAvatar3.TabIndex = 71;
+            this.pictureAvatar3.TabStop = false;
+            // 
+            // pictureAvatar2
+            // 
+            this.pictureAvatar2.Location = new System.Drawing.Point(3, 0);
+            this.pictureAvatar2.Name = "pictureAvatar2";
+            this.pictureAvatar2.Size = new System.Drawing.Size(75, 18);
+            this.pictureAvatar2.TabIndex = 71;
+            this.pictureAvatar2.TabStop = false;
+            // 
+            // pictureAvatar1
+            // 
+            this.pictureAvatar1.Location = new System.Drawing.Point(3, 15);
+            this.pictureAvatar1.Name = "pictureAvatar1";
+            this.pictureAvatar1.Size = new System.Drawing.Size(75, 18);
+            this.pictureAvatar1.TabIndex = 71;
+            this.pictureAvatar1.TabStop = false;
+            // 
+            // pictureAvatar0
+            // 
+            this.pictureAvatar0.BackColor = System.Drawing.Color.Transparent;
+            this.pictureAvatar0.Location = new System.Drawing.Point(86, 3);
+            this.pictureAvatar0.Name = "pictureAvatar0";
+            this.pictureAvatar0.Size = new System.Drawing.Size(28, 28);
+            this.pictureAvatar0.TabIndex = 71;
+            this.pictureAvatar0.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(274, 114);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 64;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(272, 112);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // FNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,30 +763,30 @@ namespace CXMLDecompilerRCO
             this.panelFNotif.PerformLayout();
             this.darkGroupBox2.ResumeLayout(false);
             this.darkGroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar3)).EndInit();
             this.panelcolor2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar2)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.darkGroupBox1.ResumeLayout(false);
             this.darkGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -133,9 +133,6 @@
   <data name="psnotificationc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\psnotificationc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Avatar080x80_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar080x80_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="open-folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open-folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +141,12 @@
   </data>
   <data name="title_003" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\title_003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rco_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rco_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PS5PKG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PS5PKG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="topmenu02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\topmenu02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +157,23 @@
   <data name="Avatar080x80_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar080x80_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="psnotification0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psnotification0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avatar028x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar028x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Avatar080x80_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar080x80_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bar_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bar_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="default_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default_game.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PkgInstaller01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PkgInstaller01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,16 +181,19 @@
   <data name="tex_bg_notification0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tex_bg_notification0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="psnotification0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\psnotification0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackG010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackG010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avatar080x80_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar080x80_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tex_bg_notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tex_bg_notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Avatar028x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar028x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LoginMgr1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginMgr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rco_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rco_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PS5PKG00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PS5PKG00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1,1 +1,1 @@
-CXMLDecompiler.exe Sce.Vsh.ShellUI.Theme.rco
+CXMLDecompiler.exe ReactNative.Components.CommonAssets.rco

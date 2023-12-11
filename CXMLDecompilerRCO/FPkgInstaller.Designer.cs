@@ -238,7 +238,7 @@ namespace CXMLDecompilerRCO
             // pictureBoxpkg1
             // 
             this.pictureBoxpkg1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxpkg1.Location = new System.Drawing.Point(172, 194);
+            this.pictureBoxpkg1.Location = new System.Drawing.Point(172, 199);
             this.pictureBoxpkg1.Name = "pictureBoxpkg1";
             this.pictureBoxpkg1.Size = new System.Drawing.Size(414, 190);
             this.pictureBoxpkg1.TabIndex = 59;
